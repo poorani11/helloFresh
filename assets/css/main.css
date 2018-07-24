@@ -22,17 +22,17 @@ ul > li {
 
 header {
     background-color: white;
-    border-bottom: 1px solid grey;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     position: fixed;
     display: flex;
     width: 100%;
-    padding: 20px;
-    height: 75px;
+    height:80px;
+    box-sizing: border-box;
 }
 
 .logo {
-    margin-top: -15px;
-    margin-left: -10px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .logo-img {
@@ -42,25 +42,48 @@ header {
 
 .nav {
     display: flex;
-    padding: 16px;
     color: black;
     width: 100%;
+    height: 80px;
 }
 
 .menu {
     display: flex;
+    height: 80px;
+}
+
+.menu > li {
+    height: 80px;
+    padding-top: 30px;
+}
+
+.menu > li:first-child {
+    padding-left: 20px;
+}
+
+.menu > li:hover {
+    border-bottom: 3px solid #91c11e;
 }
 
 .menu > li > a {
     color: black;
 }
 
+.menu > li > a:hover {
+    color: #91c11e;
+}
+
 .nav-right {
     margin-left: auto;
+    padding: 30px;
 }
 
 .nav-right > li > a {
     color: #91c11e;
+}
+
+.nav-right > li > a:hover {
+    color: #659a41;
 }
 
 .btn {
@@ -89,6 +112,7 @@ header {
 
 .dropdown {
     position: relative;
+
 }
 
 .dropdown > span {
@@ -97,30 +121,42 @@ header {
     cursor: pointer;
 }
 
-.dropdown:hover .works-menu ,
-.dropdown:hover .recipe-menu {
+.dropdown:hover .drop-menu {
     display: flex;
     flex-direction: column;
-    background: #B2D6FF;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding-top: 10px;
+    padding-top: 30px;
     position: absolute;
-    top:20px;
-    left: -10px;
+    top: 50px;
     z-index: 1;
 }
 
-.works-menu,
-.recipe-menu {
+.drop-menu {
     display: none;
     border-bottom: none;
+    width: 13em;
 }
 
-.works-menu > li,
-.recipe-menu > li{
+.drop-menu > li {
     list-style: none;
-    border-bottom: 1px solid black;
-    padding 0 40px 10px 20px;
-    margin: 10px;
+    width: 13em;
+    height: 3em;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #DCDCDC;
 }
 
+.drop-menu > li:hover {
+    border-left: 3px solid #91c11e;
+}
+
+.drop-menu > li > a {
+    color: black;
+}
+
+.drop-menu > li > a:hover {
+    color: #91c11e;
+    cursor: pointer;
+}
