@@ -6,6 +6,7 @@
     <title>Hello Fresh</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -17,8 +18,19 @@
         <nav class="nav">
             <ul class="navbar menu">
                 <li><a href="#">Our Plans</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Our Menus</a></li>
+                <li class="dropdown"><span>How It Works&nbsp;<i class="fa fa-angle-down"></i></span>
+                    <ul class="works-menu">
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Our Suppliers</a></li>
+                        <li><a href="#">Recycling</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><span>Our Menus&nbsp;<i class="fa fa-angle-down"></i></span>
+                <ul class="recipe-menu">
+                    <li><a href="#">Our Menus</a></li>
+                    <li><a href="#">Recipes Archive</a></li>
+                </ul>
+                </li>
                 <li><a href="#">Wine</a></li>
             </ul>
             <ul class=" navbar nav-right">

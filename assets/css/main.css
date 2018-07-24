@@ -32,6 +32,7 @@ header {
 
 .logo {
     margin-top: -15px;
+    margin-left: -10px;
 }
 
 .logo-img {
@@ -80,3 +81,46 @@ header {
     color: #fff;
     box-shadow: 0px 0px 0px 1px #659a41 inset;
 }
+
+.fa {
+    vertical-align: middle;
+
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > span {
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown:hover .works-menu ,
+.dropdown:hover .recipe-menu {
+    display: flex;
+    flex-direction: column;
+    background: #B2D6FF;
+    border-radius: 5px;
+    padding-top: 10px;
+    position: absolute;
+    top:20px;
+    left: -10px;
+    z-index: 1;
+}
+
+.works-menu,
+.recipe-menu {
+    display: none;
+    border-bottom: none;
+}
+
+.works-menu > li,
+.recipe-menu > li{
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding 0 40px 10px 20px;
+    margin: 10px;
+}
+
