@@ -25,3 +25,10 @@
         menuIcon.className = 'fa fa-angle-down';
     });
 })(document);
+
+$(document).ready(function () {
+    $(".mobile-dropdown").click(function () {
+        console.log("clicked")
+        $(".mobile-dropmenu").show();
+    });
+});

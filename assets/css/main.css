@@ -26,7 +26,7 @@ header {
     position: fixed;
     display: flex;
     width: 100%;
-    height:80px;
+    height: 80px;
     box-sizing: border-box;
 }
 
@@ -39,6 +39,9 @@ header {
     width: 8em;
 }
 
+.mobile-header {
+    display: none;
+}
 
 .nav {
     display: flex;
@@ -80,10 +83,6 @@ header {
 
 .nav-right > li > a {
     color: #91c11e;
-}
-
-.nav-right > li > a:hover {
-    color: #659a41;
 }
 
 .btn {
@@ -159,4 +158,80 @@ header {
 .drop-menu > li > a:hover {
     color: #91c11e;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width:948px) {
+    .web-header {
+        display: none;
+    }
+
+    .mobile-header {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 80px;
+    }
+
+    .mobile-nav {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+
+    .horizontal-logoimg {
+        width: 8em;
+    }
+    .fa {
+        font-size: 22px;
+    }
+
+    .logIn > a {
+        color: #91c11e;
+        vertical-align: middle;
+    }
+
+    .mobile-dropdown {
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+
+    }
+
+
+    .mobile-dropmenu {
+        background: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding-top: 30px;
+        position: absolute;
+        top: 80px;
+        left: 2px;
+        z-index: 1;
+        border-bottom: none;
+        display: none;
+    }
+
+
+    .mobile-dropmenu > li {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 13em;
+        height: 3em;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 10px
+    }
+    .mobile-dropmenu > li > a {
+        color: black;
+    }
+
+    .mobile-dropmenu > li > a:hover {
+        cursor: pointer;
+    }
 }
