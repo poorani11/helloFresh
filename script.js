@@ -28,7 +28,9 @@
 
 $(document).ready(function () {
     $(".mobile-dropdown").click(function () {
-        console.log("clicked")
         $(".mobile-dropmenu").show();
     });
+    $('.hero').click(function(){
+     $('.mobile-dropmenu').hide();
+});
 });
