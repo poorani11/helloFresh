@@ -180,6 +180,7 @@ header {
     font-size: 3em;
     line-height: 1.2em;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .hero > p {
@@ -187,6 +188,7 @@ header {
     font-size: 1.5em;
     font-weight: 400;
     line-height: 35px;
+    text-align: center;
 }
 
 .btn-hero {
@@ -244,7 +246,6 @@ header {
 .grid-item > p {
     margin: 10px;
     font-size: 14px;
-
     text-align: center;
 }
 
@@ -273,8 +274,9 @@ header {
     margin-left: 50%;
     background-color: white;
 }
-.box-contains>h1{
-    font-size:40px;
+
+.box-contains > h1 {
+    font-size: 40px;
     font-weight: 400;
     text-align: center;
     padding: 20px;
@@ -289,8 +291,80 @@ header {
     color: #91c11e;
 }
 
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+}
 
-@media only screen and (max-width:948px) {
+.plan > h1 {
+    margin: 35px;
+}
+
+.plan-types {
+    display: flex;
+    flex-direction: row;
+}
+
+.plan-types li {
+    list-style-type: none;
+    padding: 16px;
+    border: 1px solid #91c11e;
+}
+
+.plan-types > li > a {
+    color: #91c11e;
+}
+
+.plan > h4 {
+    margin: 25px;
+    font-weight: 400;
+}
+
+.recipe-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+    width: 33.33%;
+    height: 20em;
+    
+}
+
+.recipe-description > img {
+    width: 100%;
+}
+
+.recipe-description > h4 {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.recipe-description > p {
+    font-size: 13px;
+    margin-top: 6px;
+    margin-left: 5px;
+
+}
+
+.recipe-info {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 5px;
+}
+
+.recipe-info>p{
+    margin-left: 20px;
+    font-size: 12px;
+    color:#999;
+}
+
+
+.recipe @media only screen and (max-width:948px) {
     .web-header {
         display: none;
     }
