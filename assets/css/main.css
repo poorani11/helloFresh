@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 a:link,
@@ -201,6 +202,93 @@ header {
     color: #fff;
     box-shadow: 0px 0px 0px 1px #659a41 inset;
 }
+
+.row {
+    width: 100vw;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-title {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.grid {
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+
+}
+
+.grid-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item > img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.grid-item > h5 {
+    font-size: 14px;
+}
+
+.grid-item > p {
+    margin: 10px;
+    font-size: 14px;
+
+    text-align: center;
+}
+
+.btn-grid {
+    color: #91c11e;
+    margin: 25px;
+}
+
+.box {
+    background-image: url("/assets/images/what-you-get_2560x450.webp");
+    width: 100vw;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-contains {
+    width: 550px;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50%;
+    background-color: white;
+}
+.box-contains>h1{
+    font-size:40px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-items > li {
+    list-style-type: none;
+}
+
+.fa-plus {
+    margin: 15px;
+    color: #91c11e;
+}
+
 
 @media only screen and (max-width:948px) {
     .web-header {
